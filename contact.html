@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Coderift Technologies. Contact us for web development, mobile app development, and digital marketing services.">
+    <meta name="keywords" content="contact, get quote, web development, mobile development, digital marketing, consultation">
+    <meta name="author" content="Coderift Technologies">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact Us - Coderift Technologies">
+    <meta property="og:description" content="Get in touch with Coderift Technologies for web development, mobile app development, and digital marketing services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coderift.tech/contact">
+    <meta property="og:image" content="https://coderift.tech/assets/images/og-image.jpg">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+    <link rel="icon" type="image/png" href="/assets/icons/favicon.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Contact Us - Coderift Technologies</title>
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo" aria-label="Coderift Technologies Home">
+                    <img class="logo" src="assets/images/logo.png" alt="Coderift Technologies Logo">
+                </a>
+                
+                <nav class="nav" role="navigation" aria-label="Main navigation">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="technologies.html" class="nav-link">Technologies</a></li>
+                        <li><a href="careers.html" class="nav-link">Careers</a></li>
+                        <li><a href="contact.html" class="nav-link" aria-current="page">Contact</a></li>
+                    </ul>
+                    <a href="contact.html" class="cta-button">Get a Quote</a>
+                </nav>
+                
+                <!-- Mobile Navigation Toggle -->
+                <button class="mobile-nav-toggle" aria-label="Toggle mobile navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                <li><a href="about.html" class="mobile-nav-link">About</a></li>
+                <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+                <li><a href="technologies.html" class="mobile-nav-link">Technologies</a></li>
+                <li><a href="careers.html" class="mobile-nav-link">Careers</a></li>
+                <li><a href="contact.html" class="mobile-nav-link" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="contact-hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="contact-hero-title" class="hero-title">Get In Touch</h1>
+                    <p class="hero-subtitle">Let's discuss your project and bring your digital vision to life</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Form Section -->
+        <section class="section" aria-labelledby="contact-form-title">
+            <div class="container">
+                <h2 id="contact-form-title" class="section-title">Send Us a Message</h2>
+                <p class="section-subtitle">
+                    Fill out the form below and we'll get back to you within 24 hours
+                </p>
+                
+                <div class="grid grid-2">
+                    <!-- Contact Form -->
+                    <div class="glass-card">
+                        <form id="contact-form"  action="https://api.web3forms.com/submit" method="POST">
+
+                            <input type="hidden" name="access_key" value="8d04294c-a576-4b95-87f0-3606d59eacb8">
+
+                            <div class="form-group">
+                                <label for="full-name" class="form-label">Full Name *</label>
+                                <input type="text" id="full-name" name="name" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="project-details" class="form-label">Project Details *</label>
+                                <textarea id="project-details" name="project_details" class="form-textarea" rows="5" 
+                                    placeholder="Tell us about your project, goals, and any specific requirements..." required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget" class="form-label">Budget Range</label>
+                                <select id="budget" name="budget" class="form-select">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-20k">Under ₹20,000</option>
+                                    <option value="20k-50k">₹20,000 - ₹50,000</option>
+                                    <option value="50k-1l">₹50,000 - ₹1,00,000</option>
+                                    <option value="1l-2l">₹1,00,000 - ₹2,00,000</option>
+                                    <option value="over-2l">Over ₹2,00,000</option>
+                                    <option value="discuss">Let's discuss</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-method" class="form-label">Preferred Contact Method</label>
+                                <select id="contact-method" name="contact_method" class="form-select">
+                                    <option value="email">Email</option>
+                                    <option value="phone">Phone</option>
+                                    <option value="either">Either is fine</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="timeline" class="form-label">Project Timeline</label>
+                                <select id="timeline" name="timeline" class="form-select">
+                                    <option value="">Select timeline</option>
+                                    <option value="asap">ASAP</option>
+                                    <option value="1-month">Within 1 month</option>
+                                    <option value="3-months">Within 3 months</option>
+                                    <option value="6-months">Within 6 months</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Honeypot field for spam protection -->
+                            <div class="form-group" style="display: none;">
+                                <label for="website">Website</label>
+                                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                            </div>
+                            
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="marketing-consent" name="marketing_consent">
+                                <label for="marketing-consent">
+                                    I would like to receive updates about Coderift Technologies services and industry insights
+                                </label>
+                            </div>
+                            
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="terms-consent" name="terms_consent" required>
+                                <label for="terms-consent">
+                                    I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a> *
+                                </label>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="glass-card">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="mb-4">
+                            <h4>Email</h4>
+                            <p><a href="contact@coderifttechnologies.in">contact@coderifttechnologies.in</a></p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4>Address</h4>
+                            <p>
+                                Gurugram, Haryana, India
+                            </p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4>Office Hours</h4>
+                            <p>
+                                Monday - Friday: 9:00 AM - 6:00 PM PST<br>
+                                Saturday: Closed<br>
+                                Sunday: Closed
+                            </p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4>Follow Us</h4>
+                            <p>
+                                <a href="https://www.instagram.com/coderifttechnologies/" target="_blank" rel="noopener">Instagram</a>
+                                <a href="https://www.linkedin.com/company/coderift-teachnologies/" target="_blank" rel="noopener">LinkedIn</a>
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h4>Response Time</h4>
+                            <p>We typically respond to all inquiries within 24 hours during business days.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="section section-sm" aria-labelledby="faq-title">
+            <div class="container">
+                <h2 id="faq-title" class="section-title">Frequently Asked Questions</h2>
+                <div class="grid grid-2">
+                    <div class="glass-card">
+                        <h3>How long does a typical project take?</h3>
+                        <p>
+                            Project timelines vary based on complexity and scope. Simple websites typically take 2-4 weeks, 
+                            while complex web applications can take 2-6 months. We provide detailed timelines during our initial consultation.
+                        </p>
+                    </div>
+                    
+                    <div class="glass-card">
+                        <h3>Do you work with startups?</h3>
+                        <p>
+                            Absolutely! We work with businesses of all sizes, from startups to enterprise clients. 
+                            We offer flexible engagement models and can work within various budget constraints.
+                        </p>
+                    </div>
+                    
+                    <div class="glass-card">
+                        <h3>What's included in your support?</h3>
+                        <p>
+                            Our support includes bug fixes, security updates, performance monitoring, and minor content updates. 
+                            We also provide training for your team to manage the solution independently.
+                        </p>
+                    </div>
+                    
+                    <div class="glass-card">
+                        <h3>Do you offer maintenance packages?</h3>
+                        <p>
+                            Yes, we offer various maintenance packages to keep your solution running smoothly. 
+                            This includes regular updates, security patches, and performance optimizations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="section" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="text-center">
+                    <h2 id="cta-title" class="section-title">Ready to Start Your Project?</h2>
+                    <p class="section-subtitle">
+                        Let's schedule a free consultation to discuss your project requirements and how we can help.
+                    </p>
+                    <a href="#contact-form" class="btn btn-primary">Get Started Today</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Coderift Technologies</h3>
+                    <p>Transforming ideas into powerful digital solutions that drive growth and success.</p>
+                    <p>Email: <a href="contact@coderifttechnologies.in">contact@coderifttechnologies.in</a></p>
+                    <p>Email: <a href="coderiftechnologies@gmail.com">coderiftechnologies@gmail.com</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <p><a href="services.html#web-development">Website Development</a></p>
+                    <p><a href="services.html#mobile-development">Mobile App Development</a></p>
+                    <p><a href="services.html#digital-marketing">Digital Marketing</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="careers.html">Careers</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <p><a href="https://www.instagram.com/coderifttechnologies/" target="_blank" rel="noopener">Instagram</a></p>
+                    <p><a href="https://www.linkedin.com/company/coderift-teachnologies/" target="_blank" rel="noopener">LinkedIn</a></p>
+                    <p>Gurugram, Haryana, India</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Coderift Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
